@@ -20,6 +20,11 @@ router.get('/api/init', function(req, res, next) {
   res.json({message: 'ok'});
 });
 
+// init test 2 
+router.post('/api/collaboration', function(req,res,next) {
+  res.json({message: 'ok'});
+})
+
 // mongo connection
 router.get('/api/mongo', function(req, res, next) {
   MongoClient.connect(url, options, (err, database) => {
